@@ -34,7 +34,11 @@ if (!function_exists("println")) {
     }
 
     if (false) {
-        // for phpstorm static analysis
-        function println(...$strings) {}
+        /**
+         * ...To help with for PHPStorm static analysis
+         *
+         * @param string $strings,... Strings to print
+         */
+        function println() {}
     }
 }
