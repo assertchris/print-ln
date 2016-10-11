@@ -1,7 +1,7 @@
 <?php
 
 if (!function_exists("println")) {
-    if (PHP_VERSION >= "5.6") {
+    if (version_compare(phpversion(), "5.6.0", ">=")) {
         eval('
             function println(...$strings) {
                 foreach ($strings as $string) {
