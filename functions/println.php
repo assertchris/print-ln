@@ -32,4 +32,9 @@ if (!function_exists("println")) {
             }
         ');
     }
+
+    if (false) {
+        // for phpstorm static analysis
+        function println(...$strings) {}
+    }
 }
